@@ -1,0 +1,23 @@
+query CartValidationsGenerateRunInput {
+  cart {
+    lines {
+      id
+    }
+    buyerIdentity {
+      customer {
+        numberOfOrders
+      }
+    }
+    cost {
+      subtotalAmount {
+        amount
+        currencyCode
+      }
+    }
+  }
+  validation {
+    config: metafield(namespace: "$app", key: "config") {
+      jsonValue
+    }
+  }
+}

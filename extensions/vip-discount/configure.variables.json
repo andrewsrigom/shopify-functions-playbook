@@ -1,0 +1,11 @@
+{
+  "metafields": [
+    {
+      "ownerId": "gid://shopify/DiscountAutomaticNode/REPLACE_OWNER_ID",
+      "namespace": "$app",
+      "key": "config",
+      "type": "json",
+      "value": "{\"enabled\":true,\"percentage\":15}"
+    }
+  ]
+}

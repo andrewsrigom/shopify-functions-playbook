@@ -1,0 +1,9 @@
+{
+  "operations": [
+    {
+      "paymentMethodHide": {
+        "paymentMethodId": "gid://shopify/PaymentCustomizationPaymentMethod/1"
+      }
+    }
+  ]
+}

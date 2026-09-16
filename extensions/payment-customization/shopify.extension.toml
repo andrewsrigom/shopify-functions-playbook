@@ -1,0 +1,13 @@
+api_version = "2026-04"
+[[extensions]]
+name = "Payment Customization"
+handle = "payment-customization"
+type = "function"
+description = "Executable payment customization reference."
+[[extensions.targeting]]
+target = "cart.payment-methods.transform.run"
+input_query = "src/cart_payment_methods_transform_run.graphql"
+export = "cart-payment-methods-transform-run"
+[extensions.build]
+command = ""
+path = "dist/function.wasm"

@@ -1,0 +1,32 @@
+{
+  "operations": [
+    {
+      "productDiscountsAdd": {
+        "candidates": [
+          {
+            "targets": [
+              {
+                "cartLine": {
+                  "id": "gid://shopify/CartLine/1",
+                  "quantity": 2
+                }
+              },
+              {
+                "cartLine": {
+                  "id": "gid://shopify/CartLine/2",
+                  "quantity": 2
+                }
+              }
+            ],
+            "value": {
+              "percentage": {
+                "value": "15"
+              }
+            }
+          }
+        ],
+        "selectionStrategy": "ALL"
+      }
+    }
+  ]
+}

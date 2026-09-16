@@ -1,0 +1,14 @@
+{
+  "cart": {
+    "lines": []
+  },
+  "validation": {
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "firstProduct": "gid://shopify/Product/1",
+        "secondProduct": "gid://shopify/Product/2"
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "operations": [
+    {
+      "deliveryOptionRename": {
+        "deliveryOptionHandle": "standard",
+        "title": "Standard tracked delivery"
+      }
+    }
+  ]
+}

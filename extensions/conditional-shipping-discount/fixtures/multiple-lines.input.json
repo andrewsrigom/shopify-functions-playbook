@@ -1,0 +1,44 @@
+{
+  "cart": {
+    "lines": [
+      {
+        "id": "gid://shopify/CartLine/1"
+      },
+      {
+        "id": "gid://shopify/CartLine/2"
+      }
+    ],
+    "cost": {
+      "subtotalAmount": {
+        "amount": "75.00",
+        "currencyCode": "USD"
+      }
+    },
+    "deliveryGroups": [
+      {
+        "deliveryOptions": [
+          {
+            "handle": "standard",
+            "title": "Standard"
+          },
+          {
+            "handle": "express",
+            "title": "Express"
+          }
+        ]
+      }
+    ]
+  },
+  "discount": {
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "minimum": "75.00",
+        "currency": "USD",
+        "optionTitle": "Standard",
+        "percentage": 100
+      }
+    },
+    "discountClasses": ["SHIPPING"]
+  }
+}

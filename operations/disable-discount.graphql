@@ -1,0 +1,11 @@
+mutation DisableDiscount($id: ID!) {
+  discountAutomaticDeactivate(id: $id) {
+    automaticDiscountNode {
+      id
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}

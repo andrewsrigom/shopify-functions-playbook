@@ -1,0 +1,24 @@
+{
+  "cart": {
+    "lines": [
+      {
+        "id": "gid://shopify/CartLine/1"
+      }
+    ],
+    "cost": {
+      "subtotalAmount": {
+        "amount": "49.99",
+        "currencyCode": "USD"
+      }
+    }
+  },
+  "validation": {
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "minimum": "NaN",
+        "currency": "USD"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "metafields": [
+    {
+      "ownerId": "gid://shopify/DeliveryCustomization/REPLACE_OWNER_ID",
+      "namespace": "$app",
+      "key": "config",
+      "type": "json",
+      "value": "{\"enabled\":true,\"optionTitle\":\"Standard\",\"replacementTitle\":\"Standard tracked delivery\"}"
+    }
+  ]
+}

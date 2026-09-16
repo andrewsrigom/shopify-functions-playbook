@@ -1,0 +1,30 @@
+client_id = ""
+name = "Shopify Functions Playbook"
+application_url = "https://shopify.dev/apps/default-app-home"
+embedded = true
+[webhooks]
+api_version = "2026-04"
+[access_scopes]
+scopes = "write_validations,write_discounts,write_payment_customizations,write_delivery_customizations,write_cart_transforms"
+[auth]
+redirect_urls = []
+
+[validation.metafields.app.config]
+name = "Playbook configuration"
+type = "json"
+
+[discount.metafields.app.config]
+name = "Playbook configuration"
+type = "json"
+
+[payment_customization.metafields.app.config]
+name = "Playbook configuration"
+type = "json"
+
+[delivery_customization.metafields.app.config]
+name = "Playbook configuration"
+type = "json"
+
+[cart_transform.metafields.app.config]
+name = "Playbook configuration"
+type = "json"

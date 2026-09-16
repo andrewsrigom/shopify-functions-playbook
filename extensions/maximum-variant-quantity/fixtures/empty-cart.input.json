@@ -1,0 +1,13 @@
+{
+  "cart": {
+    "lines": []
+  },
+  "validation": {
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "maximum": 3
+      }
+    }
+  }
+}

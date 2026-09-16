@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "enabled": {
+      "type": "boolean"
+    },
+    "maximum": {
+      "type": "string",
+      "pattern": "^\\d{1,15}(?:\\.\\d{1,6})?$"
+    },
+    "currency": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "guests": {
+      "enum": ["allow", "limit"]
+    }
+  },
+  "required": ["enabled", "maximum", "currency", "guests"],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "first-order-limit configuration",
+  "description": "Unknown keys are ignored. Cross-field restrictions are documented in README and enforced by the Function."
+}

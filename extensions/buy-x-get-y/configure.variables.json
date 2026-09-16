@@ -1,0 +1,11 @@
+{
+  "metafields": [
+    {
+      "ownerId": "gid://shopify/DiscountAutomaticNode/REPLACE_OWNER_ID",
+      "namespace": "$app",
+      "key": "config",
+      "type": "json",
+      "value": "{\"enabled\":true,\"buyVariant\":\"gid://shopify/ProductVariant/1\",\"getVariant\":\"gid://shopify/ProductVariant/2\",\"buyQuantity\":2,\"getQuantity\":1}"
+    }
+  ]
+}

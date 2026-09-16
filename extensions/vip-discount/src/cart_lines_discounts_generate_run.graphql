@@ -1,0 +1,19 @@
+query CartLinesDiscountsGenerateRunInput {
+  cart {
+    buyerIdentity {
+      customer {
+        hasAnyTag(tags: ["playbook-vip"])
+      }
+    }
+    lines {
+      id
+      quantity
+    }
+  }
+  discount {
+    config: metafield(namespace: "$app", key: "config") {
+      jsonValue
+    }
+    discountClasses
+  }
+}

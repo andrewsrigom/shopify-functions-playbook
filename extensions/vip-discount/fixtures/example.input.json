@@ -1,0 +1,24 @@
+{
+  "cart": {
+    "buyerIdentity": {
+      "customer": {
+        "hasAnyTag": true
+      }
+    },
+    "lines": [
+      {
+        "id": "gid://shopify/CartLine/1",
+        "quantity": 2
+      }
+    ]
+  },
+  "discount": {
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "percentage": 15
+      }
+    },
+    "discountClasses": ["PRODUCT"]
+  }
+}

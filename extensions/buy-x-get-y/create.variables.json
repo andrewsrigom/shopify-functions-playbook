@@ -1,0 +1,14 @@
+{
+  "discount": {
+    "title": "buy-x-get-y",
+    "functionHandle": "buy-x-get-y",
+    "startsAt": "2099-01-01T00:00:00Z",
+    "discountClasses": ["PRODUCT"],
+    "combinesWith": {
+      "orderDiscounts": false,
+      "productDiscounts": false,
+      "shippingDiscounts": false
+    },
+    "appliesOnSubscription": false
+  }
+}

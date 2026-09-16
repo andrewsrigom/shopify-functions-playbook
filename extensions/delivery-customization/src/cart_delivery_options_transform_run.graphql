@@ -1,0 +1,18 @@
+query CartDeliveryOptionsTransformRunInput {
+  cart {
+    lines {
+      id
+    }
+    deliveryGroups {
+      deliveryOptions {
+        handle
+        title
+      }
+    }
+  }
+  deliveryCustomization {
+    config: metafield(namespace: "$app", key: "config") {
+      jsonValue
+    }
+  }
+}

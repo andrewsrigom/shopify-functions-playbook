@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "properties": {
+    "enabled": {
+      "type": "boolean"
+    },
+    "buyVariant": {
+      "type": "string",
+      "pattern": "^gid://shopify/ProductVariant/[0-9]+$"
+    },
+    "getVariant": {
+      "type": "string",
+      "pattern": "^gid://shopify/ProductVariant/[0-9]+$"
+    },
+    "buyQuantity": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10000
+    },
+    "getQuantity": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10000
+    }
+  },
+  "required": [
+    "enabled",
+    "buyVariant",
+    "getVariant",
+    "buyQuantity",
+    "getQuantity"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "buy-x-get-y configuration",
+  "description": "Unknown keys are ignored. Cross-field restrictions are documented in README and enforced by the Function."
+}

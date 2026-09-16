@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "enabled": {
+      "type": "boolean"
+    },
+    "maximum": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10000
+    }
+  },
+  "required": ["enabled", "maximum"],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "maximum-variant-quantity configuration",
+  "description": "Unknown keys are ignored. Cross-field restrictions are documented in README and enforced by the Function."
+}

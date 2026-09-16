@@ -1,0 +1,23 @@
+{
+  "cart": {
+    "lines": []
+  },
+  "discount": {
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "tiers": [
+          {
+            "minimum": 3,
+            "percentage": 10
+          },
+          {
+            "minimum": 6,
+            "percentage": 20
+          }
+        ]
+      }
+    },
+    "discountClasses": ["PRODUCT"]
+  }
+}

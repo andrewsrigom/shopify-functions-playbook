@@ -1,0 +1,20 @@
+{
+  "cart": {
+    "lines": [],
+    "cost": {
+      "subtotalAmount": {
+        "amount": "49.99",
+        "currencyCode": "USD"
+      }
+    }
+  },
+  "validation": {
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "minimum": "50.00",
+        "currency": "USD"
+      }
+    }
+  }
+}

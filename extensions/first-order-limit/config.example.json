@@ -1,0 +1,6 @@
+{
+  "enabled": true,
+  "maximum": "100.00",
+  "currency": "USD",
+  "guests": "limit"
+}

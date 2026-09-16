@@ -1,0 +1,11 @@
+mutation EnableValidation($id: ID!, $enable: Boolean!) {
+  validationUpdate(id: $id, validation: { enable: $enable }) {
+    validation {
+      id
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}

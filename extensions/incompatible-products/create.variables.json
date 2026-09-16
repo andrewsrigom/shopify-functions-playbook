@@ -1,0 +1,8 @@
+{
+  "validation": {
+    "title": "incompatible-products",
+    "functionHandle": "incompatible-products",
+    "enable": false,
+    "blockOnFailure": false
+  }
+}

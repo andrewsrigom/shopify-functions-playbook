@@ -1,0 +1,13 @@
+api_version = "2026-04"
+[[extensions]]
+name = "Fixed Bundle"
+handle = "fixed-bundle"
+type = "function"
+description = "Executable fixed bundle reference."
+[[extensions.targeting]]
+target = "cart.transform.run"
+input_query = "src/cart_transform_run.graphql"
+export = "cart-transform-run"
+[extensions.build]
+command = ""
+path = "dist/function.wasm"

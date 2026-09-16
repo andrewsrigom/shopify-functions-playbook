@@ -1,0 +1,14 @@
+mutation EnablePayment($id: ID!, $enabled: Boolean!) {
+  paymentCustomizationUpdate(
+    id: $id
+    paymentCustomization: { enabled: $enabled }
+  ) {
+    paymentCustomization {
+      id
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}

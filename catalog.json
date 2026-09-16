@@ -1,0 +1,101 @@
+[
+  {
+    "name": "minimum-subtotal",
+    "api": "cart_checkout_validation",
+    "target": "cart.validations.generate.run",
+    "owner": "validation",
+    "function": "cartValidationsGenerateRun",
+    "file": "cart_validations_generate_run",
+    "fixtures": 12
+  },
+  {
+    "name": "maximum-variant-quantity",
+    "api": "cart_checkout_validation",
+    "target": "cart.validations.generate.run",
+    "owner": "validation",
+    "function": "cartValidationsGenerateRun",
+    "file": "cart_validations_generate_run",
+    "fixtures": 9
+  },
+  {
+    "name": "incompatible-products",
+    "api": "cart_checkout_validation",
+    "target": "cart.validations.generate.run",
+    "owner": "validation",
+    "function": "cartValidationsGenerateRun",
+    "file": "cart_validations_generate_run",
+    "fixtures": 9
+  },
+  {
+    "name": "first-order-limit",
+    "api": "cart_checkout_validation",
+    "target": "cart.validations.generate.run",
+    "owner": "validation",
+    "function": "cartValidationsGenerateRun",
+    "file": "cart_validations_generate_run",
+    "fixtures": 14
+  },
+  {
+    "name": "tiered-quantity-discount",
+    "api": "discount",
+    "target": "cart.lines.discounts.generate.run",
+    "owner": "discount",
+    "function": "cartLinesDiscountsGenerateRun",
+    "file": "cart_lines_discounts_generate_run",
+    "fixtures": 12
+  },
+  {
+    "name": "vip-discount",
+    "api": "discount",
+    "target": "cart.lines.discounts.generate.run",
+    "owner": "discount",
+    "function": "cartLinesDiscountsGenerateRun",
+    "file": "cart_lines_discounts_generate_run",
+    "fixtures": 13
+  },
+  {
+    "name": "buy-x-get-y",
+    "api": "discount",
+    "target": "cart.lines.discounts.generate.run",
+    "owner": "discount",
+    "function": "cartLinesDiscountsGenerateRun",
+    "file": "cart_lines_discounts_generate_run",
+    "fixtures": 12
+  },
+  {
+    "name": "conditional-shipping-discount",
+    "api": "discount",
+    "target": "cart.delivery-options.discounts.generate.run",
+    "owner": "discount",
+    "function": "cartDeliveryOptionsDiscountsGenerateRun",
+    "file": "cart_delivery_options_discounts_generate_run",
+    "fixtures": 12
+  },
+  {
+    "name": "payment-customization",
+    "api": "payment_customization",
+    "target": "cart.payment-methods.transform.run",
+    "owner": "paymentCustomization",
+    "function": "cartPaymentMethodsTransformRun",
+    "file": "cart_payment_methods_transform_run",
+    "fixtures": 11
+  },
+  {
+    "name": "delivery-customization",
+    "api": "delivery_customization",
+    "target": "cart.delivery-options.transform.run",
+    "owner": "deliveryCustomization",
+    "function": "cartDeliveryOptionsTransformRun",
+    "file": "cart_delivery_options_transform_run",
+    "fixtures": 11
+  },
+  {
+    "name": "fixed-bundle",
+    "api": "cart_transform",
+    "target": "cart.transform.run",
+    "owner": "cartTransform",
+    "function": "cartTransformRun",
+    "file": "cart_transform_run",
+    "fixtures": 12
+  }
+]

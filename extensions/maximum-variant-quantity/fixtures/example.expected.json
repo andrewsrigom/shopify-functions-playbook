@@ -1,0 +1,14 @@
+{
+  "operations": [
+    {
+      "validationAdd": {
+        "errors": [
+          {
+            "message": "Variant quantity exceeds the configured maximum.",
+            "target": "$.cart"
+          }
+        ]
+      }
+    }
+  ]
+}

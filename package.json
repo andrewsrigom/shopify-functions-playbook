@@ -1,0 +1,46 @@
+{
+  "name": "shopify-functions-playbook",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.32.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "typegen": "node scripts/functions.mjs typegen",
+    "build": "node scripts/functions.mjs build",
+    "test:runtime": "node scripts/functions.mjs run",
+    "check": "pnpm format:check && pnpm lint && pnpm typegen && pnpm typecheck && pnpm test && pnpm fixtures:check && pnpm build && pnpm test:runtime",
+    "fixtures:check": "node scripts/verify-fixtures.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@graphql-codegen/cli": "7.4.1",
+    "@graphql-codegen/typescript": "6.1.0",
+    "@graphql-codegen/typescript-operations": "6.1.6",
+    "@shopify/cli": "4.8.0",
+    "@types/node": "24.13.5",
+    "eslint": "10.10.0",
+    "graphql": "17.0.2",
+    "prettier": "3.9.7",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.70.0",
+    "vitest": "4.1.11"
+  },
+  "license": "MIT",
+  "author": "Andrews Rigom",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewsrigom/shopify-functions-playbook.git"
+  },
+  "homepage": "https://github.com/andrewsrigom/shopify-functions-playbook#readme",
+  "bugs": {
+    "url": "https://github.com/andrewsrigom/shopify-functions-playbook/issues"
+  }
+}

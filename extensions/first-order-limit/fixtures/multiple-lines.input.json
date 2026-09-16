@@ -1,0 +1,33 @@
+{
+  "cart": {
+    "lines": [
+      {
+        "id": "gid://shopify/CartLine/1"
+      },
+      {
+        "id": "gid://shopify/CartLine/2"
+      }
+    ],
+    "buyerIdentity": {
+      "customer": {
+        "numberOfOrders": 0
+      }
+    },
+    "cost": {
+      "subtotalAmount": {
+        "amount": "100.01",
+        "currencyCode": "USD"
+      }
+    }
+  },
+  "validation": {
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "maximum": "100.00",
+        "currency": "USD",
+        "guests": "limit"
+      }
+    }
+  }
+}

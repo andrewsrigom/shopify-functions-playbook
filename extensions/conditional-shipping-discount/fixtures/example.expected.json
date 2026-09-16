@@ -1,0 +1,25 @@
+{
+  "operations": [
+    {
+      "deliveryDiscountsAdd": {
+        "candidates": [
+          {
+            "targets": [
+              {
+                "deliveryOption": {
+                  "handle": "standard"
+                }
+              }
+            ],
+            "value": {
+              "percentage": {
+                "value": "100"
+              }
+            }
+          }
+        ],
+        "selectionStrategy": "ALL"
+      }
+    }
+  ]
+}

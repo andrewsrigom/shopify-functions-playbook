@@ -1,0 +1,6 @@
+{
+  "enabled": true,
+  "maximum": "200.00",
+  "currency": "USD",
+  "methodName": "Cash on Delivery"
+}

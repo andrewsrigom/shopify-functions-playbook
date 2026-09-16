@@ -1,0 +1,19 @@
+{
+  "cart": {
+    "buyerIdentity": {
+      "customer": {
+        "hasAnyTag": true
+      }
+    },
+    "lines": []
+  },
+  "discount": {
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "percentage": 15
+      }
+    },
+    "discountClasses": ["PRODUCT"]
+  }
+}

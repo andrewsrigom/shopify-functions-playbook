@@ -1,0 +1,14 @@
+{
+  "operations": [
+    {
+      "validationAdd": {
+        "errors": [
+          {
+            "message": "These products cannot be purchased together.",
+            "target": "$.cart"
+          }
+        ]
+      }
+    }
+  ]
+}

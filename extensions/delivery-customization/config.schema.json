@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "enabled": {
+      "type": "boolean"
+    },
+    "optionTitle": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "replacementTitle": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    }
+  },
+  "required": ["enabled", "optionTitle", "replacementTitle"],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "delivery-customization configuration",
+  "description": "Unknown keys are ignored. Cross-field restrictions are documented in README and enforced by the Function."
+}

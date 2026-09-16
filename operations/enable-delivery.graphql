@@ -1,0 +1,14 @@
+mutation EnableDelivery($id: ID!, $enabled: Boolean!) {
+  deliveryCustomizationUpdate(
+    id: $id
+    deliveryCustomization: { enabled: $enabled }
+  ) {
+    deliveryCustomization {
+      id
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}

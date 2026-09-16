@@ -1,0 +1,35 @@
+{
+  "cart": {
+    "lines": [
+      {
+        "id": "gid://shopify/CartLine/1"
+      },
+      {
+        "id": "gid://shopify/CartLine/2"
+      }
+    ],
+    "deliveryGroups": [
+      {
+        "deliveryOptions": [
+          {
+            "handle": "standard",
+            "title": "Standard"
+          },
+          {
+            "handle": "express",
+            "title": "Express"
+          }
+        ]
+      }
+    ]
+  },
+  "deliveryCustomization": {
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "optionTitle": "Standard",
+        "replacementTitle": "Standard tracked delivery"
+      }
+    }
+  }
+}

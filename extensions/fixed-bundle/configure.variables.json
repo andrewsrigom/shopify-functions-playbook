@@ -1,0 +1,11 @@
+{
+  "metafields": [
+    {
+      "ownerId": "gid://shopify/CartTransform/REPLACE_OWNER_ID",
+      "namespace": "$app",
+      "key": "config",
+      "type": "json",
+      "value": "{\"enabled\":true,\"parentVariant\":\"gid://shopify/ProductVariant/1\",\"components\":[{\"variantId\":\"gid://shopify/ProductVariant/2\",\"quantity\":2},{\"variantId\":\"gid://shopify/ProductVariant/3\",\"quantity\":1}]}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "operations": [
+    {
+      "validationAdd": {
+        "errors": [
+          {
+            "message": "First-order subtotal exceeds the configured limit.",
+            "target": "$.cart"
+          }
+        ]
+      }
+    }
+  ]
+}

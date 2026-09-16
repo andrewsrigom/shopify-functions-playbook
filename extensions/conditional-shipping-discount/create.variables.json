@@ -1,0 +1,14 @@
+{
+  "discount": {
+    "title": "conditional-shipping-discount",
+    "functionHandle": "conditional-shipping-discount",
+    "startsAt": "2099-01-01T00:00:00Z",
+    "discountClasses": ["SHIPPING"],
+    "combinesWith": {
+      "orderDiscounts": false,
+      "productDiscounts": false,
+      "shippingDiscounts": false
+    },
+    "appliesOnSubscription": false
+  }
+}

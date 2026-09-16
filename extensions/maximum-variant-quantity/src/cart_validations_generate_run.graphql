@@ -1,0 +1,19 @@
+query CartValidationsGenerateRunInput {
+  cart {
+    lines {
+      id
+      quantity
+      merchandise {
+        __typename
+        ... on ProductVariant {
+          id
+        }
+      }
+    }
+  }
+  validation {
+    config: metafield(namespace: "$app", key: "config") {
+      jsonValue
+    }
+  }
+}

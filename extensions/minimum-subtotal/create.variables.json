@@ -1,0 +1,8 @@
+{
+  "validation": {
+    "title": "minimum-subtotal",
+    "functionHandle": "minimum-subtotal",
+    "enable": false,
+    "blockOnFailure": false
+  }
+}

@@ -1,0 +1,13 @@
+mutation Configure($metafields: [MetafieldsSetInput!]!) {
+  metafieldsSet(metafields: $metafields) {
+    metafields {
+      id
+      namespace
+      key
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}

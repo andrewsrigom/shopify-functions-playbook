@@ -1,0 +1,33 @@
+{
+  "cart": {
+    "lines": [
+      {
+        "id": "gid://shopify/CartLine/1",
+        "quantity": 2,
+        "merchandise": {
+          "__typename": "ProductVariant",
+          "id": "gid://shopify/ProductVariant/1"
+        },
+        "sellingPlanAllocation": null
+      }
+    ]
+  },
+  "cartTransform": {
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "parentVariant": "gid://shopify/ProductVariant/1",
+        "components": [
+          {
+            "variantId": "gid://shopify/ProductVariant/2",
+            "quantity": 0
+          },
+          {
+            "variantId": "gid://shopify/ProductVariant/3",
+            "quantity": 1
+          }
+        ]
+      }
+    }
+  }
+}

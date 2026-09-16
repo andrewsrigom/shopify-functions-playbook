@@ -1,0 +1,14 @@
+{
+  "operations": [
+    {
+      "validationAdd": {
+        "errors": [
+          {
+            "message": "Minimum order subtotal is 50.00 USD.",
+            "target": "$.cart"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "metafields": [
+    {
+      "ownerId": "gid://shopify/Validation/REPLACE_OWNER_ID",
+      "namespace": "$app",
+      "key": "config",
+      "type": "json",
+      "value": "{\"enabled\":true,\"firstProduct\":\"gid://shopify/Product/1\",\"secondProduct\":\"gid://shopify/Product/2\"}"
+    }
+  ]
+}

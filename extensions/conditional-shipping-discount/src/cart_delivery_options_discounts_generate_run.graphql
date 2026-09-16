@@ -1,0 +1,25 @@
+query CartDeliveryOptionsDiscountsGenerateRunInput {
+  cart {
+    lines {
+      id
+    }
+    cost {
+      subtotalAmount {
+        amount
+        currencyCode
+      }
+    }
+    deliveryGroups {
+      deliveryOptions {
+        handle
+        title
+      }
+    }
+  }
+  discount {
+    config: metafield(namespace: "$app", key: "config") {
+      jsonValue
+    }
+    discountClasses
+  }
+}

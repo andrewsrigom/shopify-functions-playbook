@@ -1,0 +1,8 @@
+{
+  "validation": {
+    "title": "maximum-variant-quantity",
+    "functionHandle": "maximum-variant-quantity",
+    "enable": false,
+    "blockOnFailure": false
+  }
+}

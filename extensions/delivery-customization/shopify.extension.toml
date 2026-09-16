@@ -1,0 +1,13 @@
+api_version = "2026-04"
+[[extensions]]
+name = "Delivery Customization"
+handle = "delivery-customization"
+type = "function"
+description = "Executable delivery customization reference."
+[[extensions.targeting]]
+target = "cart.delivery-options.transform.run"
+input_query = "src/cart_delivery_options_transform_run.graphql"
+export = "cart-delivery-options-transform-run"
+[extensions.build]
+command = ""
+path = "dist/function.wasm"

@@ -1,0 +1,28 @@
+{
+  "cart": {
+    "lines": [],
+    "deliveryGroups": [
+      {
+        "deliveryOptions": [
+          {
+            "handle": "standard",
+            "title": "Standard"
+          },
+          {
+            "handle": "express",
+            "title": "Express"
+          }
+        ]
+      }
+    ]
+  },
+  "deliveryCustomization": {
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "optionTitle": "Standard",
+        "replacementTitle": "Standard tracked delivery"
+      }
+    }
+  }
+}

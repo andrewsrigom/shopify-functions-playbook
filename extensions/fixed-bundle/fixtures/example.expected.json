@@ -1,0 +1,19 @@
+{
+  "operations": [
+    {
+      "lineExpand": {
+        "cartLineId": "gid://shopify/CartLine/1",
+        "expandedCartItems": [
+          {
+            "merchandiseId": "gid://shopify/ProductVariant/2",
+            "quantity": 2
+          },
+          {
+            "merchandiseId": "gid://shopify/ProductVariant/3",
+            "quantity": 1
+          }
+        ]
+      }
+    }
+  ]
+}

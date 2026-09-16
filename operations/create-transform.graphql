@@ -1,0 +1,11 @@
+mutation CreateTransform($functionHandle: String!) {
+  cartTransformCreate(functionHandle: $functionHandle, blockOnFailure: false) {
+    cartTransform {
+      id
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}

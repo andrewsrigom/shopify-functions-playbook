@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "properties": {
+    "enabled": {
+      "type": "boolean"
+    },
+    "parentVariant": {
+      "type": "string",
+      "pattern": "^gid://shopify/ProductVariant/[0-9]+$"
+    },
+    "components": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 50,
+      "items": {
+        "type": "object",
+        "properties": {
+          "variantId": {
+            "type": "string",
+            "pattern": "^gid://shopify/ProductVariant/[0-9]+$"
+          },
+          "quantity": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100
+          }
+        },
+        "required": ["variantId", "quantity"]
+      }
+    }
+  },
+  "required": ["enabled", "parentVariant", "components"],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "fixed-bundle configuration",
+  "description": "Unknown keys are ignored. Cross-field restrictions are documented in README and enforced by the Function."
+}

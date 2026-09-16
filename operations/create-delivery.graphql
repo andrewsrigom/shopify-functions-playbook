@@ -1,0 +1,11 @@
+mutation CreateDelivery($input: DeliveryCustomizationInput!) {
+  deliveryCustomizationCreate(deliveryCustomization: $input) {
+    deliveryCustomization {
+      id
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}

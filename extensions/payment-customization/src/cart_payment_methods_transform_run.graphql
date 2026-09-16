@@ -1,0 +1,22 @@
+query CartPaymentMethodsTransformRunInput {
+  cart {
+    lines {
+      id
+    }
+    cost {
+      totalAmount {
+        amount
+        currencyCode
+      }
+    }
+  }
+  paymentMethods {
+    id
+    name
+  }
+  paymentCustomization {
+    config: metafield(namespace: "$app", key: "config") {
+      jsonValue
+    }
+  }
+}

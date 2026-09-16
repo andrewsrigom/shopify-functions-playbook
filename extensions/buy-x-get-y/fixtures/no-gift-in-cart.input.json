@@ -1,0 +1,26 @@
+{
+  "cart": {
+    "lines": [
+      {
+        "id": "gid://shopify/CartLine/1",
+        "quantity": 2,
+        "merchandise": {
+          "__typename": "ProductVariant",
+          "id": "gid://shopify/ProductVariant/1"
+        }
+      }
+    ]
+  },
+  "discount": {
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "buyVariant": "gid://shopify/ProductVariant/1",
+        "getVariant": "gid://shopify/ProductVariant/2",
+        "buyQuantity": 2,
+        "getQuantity": 1
+      }
+    },
+    "discountClasses": ["PRODUCT"]
+  }
+}

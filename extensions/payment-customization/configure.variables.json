@@ -1,0 +1,11 @@
+{
+  "metafields": [
+    {
+      "ownerId": "gid://shopify/PaymentCustomization/REPLACE_OWNER_ID",
+      "namespace": "$app",
+      "key": "config",
+      "type": "json",
+      "value": "{\"enabled\":true,\"maximum\":\"200.00\",\"currency\":\"USD\",\"methodName\":\"Cash on Delivery\"}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "cart": {
+    "lines": [
+      {
+        "id": "gid://shopify/CartLine/1",
+        "quantity": 2,
+        "merchandise": {
+          "__typename": "ProductVariant",
+          "id": "gid://shopify/ProductVariant/1"
+        },
+        "sellingPlanAllocation": null
+      }
+    ]
+  },
+  "cartTransform": {
+    "config": null
+  }
+}

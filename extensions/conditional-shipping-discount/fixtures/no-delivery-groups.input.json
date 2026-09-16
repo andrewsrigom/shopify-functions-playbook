@@ -1,0 +1,28 @@
+{
+  "cart": {
+    "lines": [
+      {
+        "id": "gid://shopify/CartLine/1"
+      }
+    ],
+    "cost": {
+      "subtotalAmount": {
+        "amount": "75.00",
+        "currencyCode": "USD"
+      }
+    },
+    "deliveryGroups": []
+  },
+  "discount": {
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "minimum": "75.00",
+        "currency": "USD",
+        "optionTitle": "Standard",
+        "percentage": 100
+      }
+    },
+    "discountClasses": ["SHIPPING"]
+  }
+}

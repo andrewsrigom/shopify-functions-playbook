@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "enabled": {
+      "type": "boolean"
+    },
+    "firstProduct": {
+      "type": "string",
+      "pattern": "^gid://shopify/Product/[0-9]+$"
+    },
+    "secondProduct": {
+      "type": "string",
+      "pattern": "^gid://shopify/Product/[0-9]+$"
+    }
+  },
+  "required": ["enabled", "firstProduct", "secondProduct"],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "incompatible-products configuration",
+  "description": "Unknown keys are ignored. Cross-field restrictions are documented in README and enforced by the Function."
+}

@@ -1,0 +1,17 @@
+{
+  "cart": {
+    "lines": []
+  },
+  "discount": {
+    "discountClasses": ["ORDER"],
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "currency": "USD",
+        "minimumSubtotal": "100.00",
+        "amount": "10.00",
+        "excludedVariantIds": ["gid://shopify/ProductVariant/9"]
+      }
+    }
+  }
+}

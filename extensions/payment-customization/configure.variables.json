@@ -5,7 +5,7 @@
       "namespace": "$app",
       "key": "config",
       "type": "json",
-      "value": "{\"enabled\":true,\"maximum\":\"200.00\",\"currency\":\"USD\",\"methodName\":\"Cash on Delivery\"}"
+      "value": "{\"enabled\":false,\"maximum\":\"200.00\",\"currency\":\"USD\",\"methodName\":\"Cash on Delivery\",\"allowHidingAllMethods\":false}"
     }
   ]
 }

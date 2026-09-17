@@ -5,3 +5,7 @@
 - The original Shopify MIT license is retained in LICENSE.md.
 - Unrelated FAQ/app-home/admin-tool examples and their inherited support policy were removed.
 - No upstream filesystem references are required by installation, tests, type generation, compilation, or runtime execution.
+
+## Additional scenarios
+
+`conditional-delivery`, `order-subtotal-discount`, and `mix-and-match-bundle` reuse the repository's official-template-derived delivery, unified-discount, and cart-transform extension bases. Their input queries, business rules, configuration, fixtures, and tests are scenario-specific; Shopify CLI generates types and compiles the Wasm artifacts. They use the same pinned API schemas and runtime as the original extensions.

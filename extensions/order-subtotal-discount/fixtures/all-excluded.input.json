@@ -1,0 +1,31 @@
+{
+  "cart": {
+    "lines": [
+      {
+        "id": "gid://shopify/CartLine/1",
+        "merchandise": {
+          "__typename": "ProductVariant",
+          "id": "gid://shopify/ProductVariant/9"
+        },
+        "cost": {
+          "subtotalAmount": {
+            "amount": "100.00",
+            "currencyCode": "USD"
+          }
+        }
+      }
+    ]
+  },
+  "discount": {
+    "discountClasses": ["ORDER"],
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "currency": "USD",
+        "minimumSubtotal": "100.00",
+        "amount": "10.00",
+        "excludedVariantIds": ["gid://shopify/ProductVariant/9"]
+      }
+    }
+  }
+}

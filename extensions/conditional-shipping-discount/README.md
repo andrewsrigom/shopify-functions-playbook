@@ -40,10 +40,10 @@ These commands compile and execute the actual Wasm with Shopify CLI. See [checks
 Owner: **DiscountAutomaticNode**, queried as `discount.config`. Metafield namespace `$app`, key `config`, type `json`. The app TOML declares the definition before values are written. `config.schema.json` documents the JSON structure; the implementation performs runtime checks without adding runtime packages. Unknown properties are ignored.
 
 1. Follow [app setup](../../docs/activation.md) and deploy definitions only when explicitly authorized.
-2. Create the owner with `operations/create-discount.graphql` and this scenario's `create.variables.json`. The example starts in 2099; choose the intended `startsAt` schedule when creating or updating the discount.
-3. Copy the returned owner ID into `configure.variables.json`. Use the returned `discountId` (DiscountAutomaticNode), not the Function ID.
-4. Execute `operations/configure.graphql` with those variables to write the `$app` / `config` JSON metafield. The input query reads these values at runtime.
-5. The `startsAt` schedule controls activation. Update it with `discountAutomaticAppUpdate` when ready. To deactivate, execute `operations/disable-discount.graphql` with `activation.variables.json` containing the real discount ID.
+2. Create the owner with `operations/create-discount.graphql` and this scenario's `create.variables.json`. The example uses a one-hour window in 2099; deliberately set both `startsAt` and `endsAt` to the intended short test session when creating or updating the discount.
+3. Copy `configure.variables.json` to an ignored `configure.local.json` and insert the returned owner ID. Use the returned `discountId` (DiscountAutomaticNode), not the Function ID. The configuration starts with `enabled:false`.
+4. Execute `operations/configure.graphql` with the local variables to write the inactive `$app` / `config` JSON metafield. After reviewing the configuration, deliberately change its JSON `enabled` to true and write it again for the test session. The input query reads these values at runtime.
+5. The `startsAt` and `endsAt` schedule controls activation. Update both with `discountAutomaticAppUpdate` when ready. To deactivate, execute `operations/disable-discount.graphql` with `activation.variables.json` containing the real discount ID.
 
 Required owner scope: `write_discounts`; read access accompanies write access. Use app-context credentials so `$app` resolves to the same app that owns the Function. Never execute these mutations from default CI.
 
@@ -62,3 +62,5 @@ Money thresholds are decimal strings in the specified presentment currency. Comp
 - [Versioned Function API](https://shopify.dev/docs/api/functions/2026-04/discount)
 - [Function availability](https://shopify.dev/docs/apps/build/functions)
 - [Configuration and owner lifecycle](../../docs/activation.md)
+
+See [security and cost controls](../../docs/security-and-cost.md) before selecting a store, enabling rules, or testing checkout.

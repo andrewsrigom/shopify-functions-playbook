@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "enabled",
+    "hideTitle",
+    "preferredTitle",
+    "restrictedVariantIds",
+    "blockedCountries"
+  ],
+  "properties": {
+    "enabled": {
+      "type": "boolean"
+    },
+    "hideTitle": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "preferredTitle": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "restrictedVariantIds": {
+      "type": "array",
+      "maxItems": 50,
+      "items": {
+        "type": "string",
+        "pattern": "^gid://shopify/ProductVariant/[0-9]+$"
+      }
+    },
+    "blockedCountries": {
+      "type": "array",
+      "maxItems": 50,
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Z]{2}$"
+      }
+    }
+  },
+  "additionalProperties": true
+}

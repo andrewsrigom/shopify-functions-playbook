@@ -5,7 +5,7 @@
       "namespace": "$app",
       "key": "config",
       "type": "json",
-      "value": "{\"enabled\":true,\"percentage\":15}"
+      "value": "{\"enabled\":false,\"percentage\":15}"
     }
   ]
 }

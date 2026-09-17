@@ -5,7 +5,7 @@
       "namespace": "$app",
       "key": "config",
       "type": "json",
-      "value": "{\"enabled\":true,\"optionTitle\":\"Standard\",\"replacementTitle\":\"Standard tracked delivery\"}"
+      "value": "{\"enabled\":false,\"optionTitle\":\"Standard\",\"replacementTitle\":\"Standard tracked delivery\"}"
     }
   ]
 }

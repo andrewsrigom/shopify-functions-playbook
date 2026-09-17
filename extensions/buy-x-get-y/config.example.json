@@ -1,5 +1,5 @@
 {
-  "enabled": true,
+  "enabled": false,
   "buyVariant": "gid://shopify/ProductVariant/1",
   "getVariant": "gid://shopify/ProductVariant/2",
   "buyQuantity": 2,

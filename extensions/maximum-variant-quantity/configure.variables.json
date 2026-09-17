@@ -5,7 +5,7 @@
       "namespace": "$app",
       "key": "config",
       "type": "json",
-      "value": "{\"enabled\":true,\"maximum\":3}"
+      "value": "{\"enabled\":false,\"maximum\":3}"
     }
   ]
 }

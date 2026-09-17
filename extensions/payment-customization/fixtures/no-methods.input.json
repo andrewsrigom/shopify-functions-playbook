@@ -1,0 +1,26 @@
+{
+  "cart": {
+    "lines": [
+      {
+        "id": "gid://shopify/CartLine/1"
+      }
+    ],
+    "cost": {
+      "totalAmount": {
+        "amount": "200.01",
+        "currencyCode": "USD"
+      }
+    }
+  },
+  "paymentCustomization": {
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "maximum": "200.00",
+        "currency": "USD",
+        "methodName": "Cash on Delivery"
+      }
+    }
+  },
+  "paymentMethods": []
+}

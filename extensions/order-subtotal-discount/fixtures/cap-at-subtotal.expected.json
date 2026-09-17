@@ -1,0 +1,25 @@
+{
+  "operations": [
+    {
+      "orderDiscountsAdd": {
+        "selectionStrategy": "FIRST",
+        "candidates": [
+          {
+            "targets": [
+              {
+                "orderSubtotal": {
+                  "excludedCartLineIds": []
+                }
+              }
+            ],
+            "value": {
+              "fixedAmount": {
+                "amount": "100.000000"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

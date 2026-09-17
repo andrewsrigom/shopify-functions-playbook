@@ -5,7 +5,7 @@
       "namespace": "$app",
       "key": "config",
       "type": "json",
-      "value": "{\"enabled\":true,\"firstProduct\":\"gid://shopify/Product/1\",\"secondProduct\":\"gid://shopify/Product/2\"}"
+      "value": "{\"enabled\":false,\"firstProduct\":\"gid://shopify/Product/1\",\"secondProduct\":\"gid://shopify/Product/2\"}"
     }
   ]
 }

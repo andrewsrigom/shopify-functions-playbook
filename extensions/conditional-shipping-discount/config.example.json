@@ -1,5 +1,5 @@
 {
-  "enabled": true,
+  "enabled": false,
   "minimum": "75.00",
   "currency": "USD",
   "optionTitle": "Standard",

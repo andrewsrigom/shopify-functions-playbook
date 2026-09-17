@@ -5,7 +5,7 @@
       "namespace": "$app",
       "key": "config",
       "type": "json",
-      "value": "{\"enabled\":true,\"buyVariant\":\"gid://shopify/ProductVariant/1\",\"getVariant\":\"gid://shopify/ProductVariant/2\",\"buyQuantity\":2,\"getQuantity\":1}"
+      "value": "{\"enabled\":false,\"buyVariant\":\"gid://shopify/ProductVariant/1\",\"getVariant\":\"gid://shopify/ProductVariant/2\",\"buyQuantity\":2,\"getQuantity\":1}"
     }
   ]
 }

@@ -5,7 +5,7 @@
       "namespace": "$app",
       "key": "config",
       "type": "json",
-      "value": "{\"enabled\":true,\"tiers\":[{\"minimum\":3,\"percentage\":10},{\"minimum\":6,\"percentage\":20}]}"
+      "value": "{\"enabled\":false,\"tiers\":[{\"minimum\":3,\"percentage\":10},{\"minimum\":6,\"percentage\":20}]}"
     }
   ]
 }

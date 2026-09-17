@@ -1,0 +1,16 @@
+{
+  "cart": {
+    "deliveryGroups": []
+  },
+  "deliveryCustomization": {
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "hideTitle": "Express",
+        "restrictedVariantIds": ["gid://shopify/ProductVariant/2"],
+        "blockedCountries": ["BR"],
+        "preferredTitle": "Standard"
+      }
+    }
+  }
+}

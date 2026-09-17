@@ -1,0 +1,42 @@
+{
+  "cart": {
+    "lines": [
+      {
+        "id": "gid://shopify/CartLine/1",
+        "quantity": 5,
+        "sellingPlanAllocation": null,
+        "merchandise": {
+          "__typename": "ProductVariant",
+          "id": "gid://shopify/ProductVariant/2"
+        }
+      },
+      {
+        "id": "gid://shopify/CartLine/2",
+        "quantity": 1,
+        "sellingPlanAllocation": null,
+        "merchandise": {
+          "__typename": "ProductVariant",
+          "id": "gid://shopify/ProductVariant/3"
+        }
+      }
+    ]
+  },
+  "cartTransform": {
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "parentVariant": "gid://shopify/ProductVariant/1",
+        "components": [
+          {
+            "variantId": "gid://shopify/ProductVariant/2",
+            "quantity": 2
+          },
+          {
+            "variantId": "gid://shopify/ProductVariant/3",
+            "quantity": 1
+          }
+        ]
+      }
+    }
+  }
+}

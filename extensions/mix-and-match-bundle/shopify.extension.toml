@@ -1,0 +1,13 @@
+api_version = "2026-04"
+[[extensions]]
+name = "Mix And Match Bundle"
+handle = "mix-and-match-bundle"
+type = "function"
+description = "Assemble one configured bundle from existing component cart lines."
+[[extensions.targeting]]
+target = "cart.transform.run"
+input_query = "src/cart_transform_run.graphql"
+export = "cart-transform-run"
+[extensions.build]
+command = ""
+path = "dist/function.wasm"

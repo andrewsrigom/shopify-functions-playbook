@@ -9,6 +9,7 @@
       "productDiscounts": false,
       "shippingDiscounts": false
     },
-    "appliesOnSubscription": false
+    "appliesOnSubscription": false,
+    "endsAt": "2099-01-01T01:00:00Z"
   }
 }

@@ -5,7 +5,7 @@
       "namespace": "$app",
       "key": "config",
       "type": "json",
-      "value": "{\"enabled\":true,\"minimum\":\"75.00\",\"currency\":\"USD\",\"optionTitle\":\"Standard\",\"percentage\":100}"
+      "value": "{\"enabled\":false,\"minimum\":\"75.00\",\"currency\":\"USD\",\"optionTitle\":\"Standard\",\"percentage\":100}"
     }
   ]
 }

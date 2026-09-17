@@ -6,12 +6,12 @@ Use Node.js 24, pnpm 10.32.0, and the repository's pinned Shopify CLI 4.8.0. All
 | --------------------- | --------------------------------------------------------------------------------------- |
 | `pnpm format:check`   | Check source and documentation formatting                                               |
 | `pnpm lint`           | Enforce lint rules                                                                      |
-| `pnpm typegen`        | Generate schema and query types for all eleven extensions using Shopify CLI             |
+| `pnpm typegen`        | Generate schema and query types for all fourteen extensions using Shopify CLI           |
 | `pnpm typecheck`      | Check strict TypeScript                                                                 |
-| `pnpm test`           | Run 127 unit tests covering complete Function outputs                                   |
+| `pnpm test`           | Run 191 unit tests covering complete Function outputs                                   |
 | `pnpm fixtures:check` | Validate fixture fields, nullability, enums, lists, and unions against each input query |
-| `pnpm build`          | Compile all eleven actual Wasm Functions                                                |
-| `pnpm test:runtime`   | Execute all 127 fixtures in the compiled runtime and compare complete JSON outputs      |
+| `pnpm build`          | Compile all fourteen actual Wasm Functions                                              |
+| `pnpm test:runtime`   | Execute all 177 fixtures in the compiled runtime and compare complete JSON outputs      |
 | `pnpm check`          | Run the complete sequence above                                                         |
 
 Append a scenario name to type generation, build, and runtime commands to select one extension, for example `pnpm build fixed-bundle` and `pnpm test:runtime fixed-bundle`. The first build downloads Shopify's compiler/runtime tools.

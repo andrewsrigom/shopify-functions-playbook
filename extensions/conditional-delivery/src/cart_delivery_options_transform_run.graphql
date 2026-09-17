@@ -1,0 +1,26 @@
+query CartDeliveryOptionsTransformRunInput {
+  cart {
+    deliveryGroups {
+      cartLines {
+        merchandise {
+          __typename
+          ... on ProductVariant {
+            id
+          }
+        }
+      }
+      deliveryAddress {
+        countryCode
+      }
+      deliveryOptions {
+        handle
+        title
+      }
+    }
+  }
+  deliveryCustomization {
+    config: metafield(namespace: "$app", key: "config") {
+      jsonValue
+    }
+  }
+}

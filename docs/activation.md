@@ -13,10 +13,10 @@ Only after reviewing the compiled code and explicitly approving publication shou
 ## Definitions, values, then runtime reads
 
 1. `shopify.app.toml` declares app-owned JSON definitions for Validation, Discount, PaymentCustomization, DeliveryCustomization, and CartTransform. These definitions must be installed with the app before writing values.
-2. Each scenario provides a creation operation and example variables. Create disabled validation/payment/delivery owners. Discount examples start in 2099 until the operator intentionally chooses an active schedule. A CartTransform owner can exist without enabled config and produces no expansion.
-3. Write values with `operations/configure.graphql` (`metafieldsSet`) using the actual owner ID and the scenario’s configuration JSON. Never use a Function ID as the metafield owner ID.
+2. Each scenario provides a creation operation and example variables. Create disabled validation/payment/delivery owners. Discount examples have a one-hour window in 2099 until the operator deliberately chooses both start and end times for a short test session. A CartTransform owner can exist without enabled config and produces no transform operations.
+3. Copy `configure.variables.json` to an ignored `configure.local.json`. Write values with `operations/configure.graphql` (`metafieldsSet`) using the actual owner ID and the scenario’s configuration JSON, which starts with `enabled:false`. Never use a Function ID as the metafield owner ID.
 4. The scenario input query reads `metafield(namespace: "$app", key: "config") { jsonValue }` from its owner. Shopify supplies that data at invocation time.
-5. Activate intentionally and test representative checkouts, then deactivate before exploring conflicting examples.
+5. When ready, set the configuration JSON `enabled` to true and write it again, then activate the owner or discount schedule intentionally. Owner activation variables also start false. Test representative checkouts, then deactivate before exploring conflicting examples. Cart Transform begins operating as soon as its config is enabled.
 
 The static GraphQL operations were validated against Admin API 2026-04; sample IDs and configuration values must still be replaced. Do not use a generic merchant token belonging to a different app: `$app` is resolved by the authenticated app identity.
 
@@ -40,3 +40,9 @@ Discount examples default to no combination with other discount classes. This do
 - [Metafield definitions](https://shopify.dev/docs/apps/build/metafields/definitions)
 - [Official extension-only template](https://github.com/Shopify/shopify-app-template-extension-only)
 - [Official Function templates](https://github.com/Shopify/function-examples)
+
+## Store, credentials, and rollback
+
+Before any authenticated operation, independently confirm the selected app client ID, development-store domain, and intended owner ID. Keep store-specific variables in ignored `*.local.json` files and named app configurations in ignored `shopify.app.*.toml` files. Ignore rules do not protect files already tracked by Git; inspect staged changes before committing. Use Shopify CLI authentication or your app's authenticated client, and do not place tokens in fixture/configuration JSON, command arguments, screenshots, logs, or committed files.
+
+Keep an operator record of each owner ID and its previous configuration in an ignored local file. `metafieldsSet` replaces the value, so read and review the current owner before overwriting it. Use the owner-specific deactivation operation for rollback; setting the config `enabled:false` also makes these Functions return no operations. Review [security and cost controls](security-and-cost.md) and [platform restrictions](platform-restrictions.md) before installing into any store.

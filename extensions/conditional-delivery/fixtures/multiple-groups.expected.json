@@ -1,0 +1,15 @@
+{
+  "operations": [
+    {
+      "deliveryOptionHide": {
+        "deliveryOptionHandle": "express"
+      }
+    },
+    {
+      "deliveryOptionMove": {
+        "deliveryOptionHandle": "standard",
+        "index": 0
+      }
+    }
+  ]
+}

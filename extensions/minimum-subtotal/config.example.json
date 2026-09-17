@@ -1,5 +1,5 @@
 {
-  "enabled": true,
+  "enabled": false,
   "minimum": "50.00",
   "currency": "USD"
 }

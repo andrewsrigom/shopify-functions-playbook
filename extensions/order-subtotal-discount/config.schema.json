@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "enabled",
+    "currency",
+    "minimumSubtotal",
+    "amount",
+    "excludedVariantIds"
+  ],
+  "properties": {
+    "enabled": {
+      "type": "boolean"
+    },
+    "currency": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "minimumSubtotal": {
+      "type": "string",
+      "pattern": "^\\d{1,15}(?:\\.\\d{1,6})?$"
+    },
+    "amount": {
+      "type": "string",
+      "pattern": "^\\d{1,15}(?:\\.\\d{1,6})?$"
+    },
+    "excludedVariantIds": {
+      "type": "array",
+      "maxItems": 50,
+      "items": {
+        "type": "string",
+        "pattern": "^gid://shopify/ProductVariant/[0-9]+$"
+      }
+    }
+  },
+  "additionalProperties": true
+}

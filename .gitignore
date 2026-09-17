@@ -4,3 +4,8 @@ node_modules/
 .env*
 coverage/
 shopify.app.local.toml
+
+# Store-specific operator files and exported execution data.
+*.local.json
+*.local.graphql
+shopify.app.*.toml

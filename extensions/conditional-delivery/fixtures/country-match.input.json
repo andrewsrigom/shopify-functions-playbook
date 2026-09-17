@@ -1,0 +1,44 @@
+{
+  "cart": {
+    "deliveryGroups": [
+      {
+        "cartLines": [
+          {
+            "merchandise": {
+              "__typename": "ProductVariant",
+              "id": "gid://shopify/ProductVariant/4"
+            }
+          }
+        ],
+        "deliveryAddress": {
+          "countryCode": "BR"
+        },
+        "deliveryOptions": [
+          {
+            "handle": "express",
+            "title": "Express"
+          },
+          {
+            "handle": "pickup",
+            "title": "Pickup"
+          },
+          {
+            "handle": "standard",
+            "title": "Standard"
+          }
+        ]
+      }
+    ]
+  },
+  "deliveryCustomization": {
+    "config": {
+      "jsonValue": {
+        "enabled": true,
+        "hideTitle": "Express",
+        "restrictedVariantIds": ["gid://shopify/ProductVariant/2"],
+        "blockedCountries": ["BR"],
+        "preferredTitle": "Standard"
+      }
+    }
+  }
+}

@@ -2,7 +2,9 @@
 
 ## Problem and demonstration
 
-Hide a named payment method above a configured order total.
+Hide a named payment method above a configured order total, while preserving an alternative by default.
+
+By default, the Function returns no hide operations if every method in its input matches the configured name. Set `allowHidingAllMethods:true` only if intentionally blocking those methods even without an alternative. This availability policy can leave the named method visible above the threshold; it is not a fraud or credit control. Other apps can still hide remaining methods, so test coexistence.
 
 Uses totalAmount, not subtotalAmount. Exact maximum remains allowed. Missing methods produce no operation. Method names are store-specific. The example does not set payment terms or target specific accelerated placements.
 
@@ -41,8 +43,8 @@ Owner: **PaymentCustomization**, queried as `paymentCustomization.config`. Metaf
 
 1. Follow [app setup](../../docs/activation.md) and deploy definitions only when explicitly authorized.
 2. Create the owner with `operations/create-payment.graphql` and this scenario's `create.variables.json`. The example creates a disabled owner so configuration can be reviewed before activation.
-3. Copy the returned owner ID into `configure.variables.json`. Use the returned owner ID, not the Function ID.
-4. Execute `operations/configure.graphql` with those variables to write the `$app` / `config` JSON metafield. The input query reads these values at runtime.
+3. Copy `configure.variables.json` to an ignored `configure.local.json` and insert the returned owner ID. Use the owner ID, not the Function ID. The configuration starts with `enabled:false`.
+4. Execute `operations/configure.graphql` with the local variables to write the inactive `$app` / `config` JSON metafield. After reviewing the configuration, deliberately change its JSON `enabled` to true and write it again for the test session. The input query reads these values at runtime.
 5. Execute `operations/enable-payment.graphql` with `activation.variables.json`. Replace its sample owner ID and set `enabled` to true to activate or false to deactivate.
 
 Required owner scope: `write_payment_customizations`; read access accompanies write access. Use app-context credentials so `$app` resolves to the same app that owns the Function. Never execute these mutations from default CI.
@@ -53,6 +55,8 @@ Empty carts produce no operations. Tests cover missing/null fields selected by t
 
 ## Production adaptations and limitations
 
+By default, the Function returns no hide operations if every method in its input matches the configured name. Set `allowHidingAllMethods:true` only if intentionally blocking those methods even without an alternative. This availability policy can leave the named method visible above the threshold; it is not a fraud or credit control. Other apps can still hide remaining methods, so test coexistence.
+
 Uses totalAmount, not subtotalAmount. Exact maximum remains allowed. Missing methods produce no operation. Method names are store-specific. The example does not set payment terms or target specific accelerated placements.
 
 Money thresholds are decimal strings in the specified presentment currency. Comparisons use fixed six-decimal BigInt units (up to 15 whole digits), with no floating-point conversion or rounding; greater precision is rejected. Other currencies are a no-op, never silently USD. Percentages are whole integers from 1 to 100; Shopify allocates and rounds discount amounts, so checkout allocation must be verified in the store. No network targets or external integrations are required.
@@ -62,3 +66,5 @@ Money thresholds are decimal strings in the specified presentment currency. Comp
 - [Versioned Function API](https://shopify.dev/docs/api/functions/2026-04/payment-customization)
 - [Function availability](https://shopify.dev/docs/apps/build/functions)
 - [Configuration and owner lifecycle](../../docs/activation.md)
+
+See [security and cost controls](../../docs/security-and-cost.md) before selecting a store, enabling rules, or testing checkout.

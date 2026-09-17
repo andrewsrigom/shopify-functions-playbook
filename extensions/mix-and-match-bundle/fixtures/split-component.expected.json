@@ -1,0 +1,23 @@
+{
+  "operations": [
+    {
+      "linesMerge": {
+        "parentVariantId": "gid://shopify/ProductVariant/1",
+        "cartLines": [
+          {
+            "cartLineId": "gid://shopify/CartLine/1",
+            "quantity": 1
+          },
+          {
+            "cartLineId": "gid://shopify/CartLine/3",
+            "quantity": 1
+          },
+          {
+            "cartLineId": "gid://shopify/CartLine/2",
+            "quantity": 1
+          }
+        ]
+      }
+    }
+  ]
+}

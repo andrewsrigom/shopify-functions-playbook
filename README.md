@@ -1,6 +1,6 @@
 # Shopify Functions Playbook
 
-Eleven independently selectable TypeScript Functions with versioned input queries, generated types, validated configuration, realistic fixtures, unit tests, and compiled WebAssembly runtime checks. One minimal extension-only app keeps installation simple; each Function has its own owner and activation lifecycle.
+Fourteen independently selectable TypeScript Functions with versioned input queries, generated types, validated configuration, realistic fixtures, unit tests, and compiled WebAssembly runtime checks. One minimal extension-only app keeps installation simple; each Function has its own owner and activation lifecycle.
 
 ## Quick start
 
@@ -29,6 +29,9 @@ Node.js 24 and pnpm 10.32.0 are required. CLI 4.8.0 and the Function JavaScript 
 | [payment-customization](extensions/payment-customization)                 | Hide a named payment method above a configured order total.                          | PaymentCustomization  |
 | [delivery-customization](extensions/delivery-customization)               | Rename an existing delivery option to clarify its service.                           | DeliveryCustomization |
 | [fixed-bundle](extensions/fixed-bundle)                                   | Expand a configured parent variant into a fixed set of component variants.           | CartTransform         |
+| [conditional-delivery](extensions/conditional-delivery)                   | Hide and prioritize delivery options per shipment, preserving an available option.   | DeliveryCustomization |
+| [order-subtotal-discount](extensions/order-subtotal-discount)             | Discount an eligible order subtotal while excluding configured variants.             | DiscountAutomaticNode |
+| [mix-and-match-bundle](extensions/mix-and-match-bundle)                   | Assemble a fixed recipe from existing component cart lines with linesMerge.          | CartTransform         |
 
 ## Development checks
 
@@ -36,6 +39,7 @@ Run `pnpm check` for formatting, lint, generated types, strict TypeScript, unit 
 
 ## Further reading
 
+- [Security, checkout safety, and cost controls](docs/security-and-cost.md)
 - [App setup, scopes, activation, and deactivation](docs/activation.md)
 - [Plan, coexistence, and network restrictions](docs/platform-restrictions.md)
 - [Schema provenance](vendor/README.md)

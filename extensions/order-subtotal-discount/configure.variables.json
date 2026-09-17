@@ -1,0 +1,11 @@
+{
+  "metafields": [
+    {
+      "ownerId": "gid://shopify/DiscountAutomaticNode/REPLACE_OWNER_ID",
+      "namespace": "$app",
+      "key": "config",
+      "type": "json",
+      "value": "{\"enabled\":false,\"currency\":\"USD\",\"minimumSubtotal\":\"100.00\",\"amount\":\"10.00\",\"excludedVariantIds\":[\"gid://shopify/ProductVariant/9\"]}"
+    }
+  ]
+}

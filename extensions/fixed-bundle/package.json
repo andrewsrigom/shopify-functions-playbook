@@ -1,7 +1,7 @@
 {
   "name": "fixed-bundle",
   "version": "0.0.1",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "shopify": "npm exec -- shopify",
     "typegen": "npm exec -- shopify app function typegen",

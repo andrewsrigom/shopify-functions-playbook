@@ -1,0 +1,36 @@
+{
+  "cart": {
+    "deliveryGroups": [
+      {
+        "cartLines": [
+          {
+            "merchandise": {
+              "__typename": "ProductVariant",
+              "id": "gid://shopify/ProductVariant/2"
+            }
+          }
+        ],
+        "deliveryAddress": {
+          "countryCode": "US"
+        },
+        "deliveryOptions": [
+          {
+            "handle": "express",
+            "title": "Express"
+          },
+          {
+            "handle": "pickup",
+            "title": "Pickup"
+          },
+          {
+            "handle": "standard",
+            "title": "Standard"
+          }
+        ]
+      }
+    ]
+  },
+  "deliveryCustomization": {
+    "config": null
+  }
+}

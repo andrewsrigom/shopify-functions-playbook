@@ -1,0 +1,13 @@
+api_version = "2026-04"
+[[extensions]]
+name = "Conditional Delivery"
+handle = "conditional-delivery"
+type = "function"
+description = "Hide restricted delivery options and prioritize an available alternative."
+[[extensions.targeting]]
+target = "cart.delivery-options.transform.run"
+input_query = "src/cart_delivery_options_transform_run.graphql"
+export = "cart-delivery-options-transform-run"
+[extensions.build]
+command = ""
+path = "dist/function.wasm"

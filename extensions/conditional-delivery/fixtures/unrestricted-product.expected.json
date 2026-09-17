@@ -1,0 +1,10 @@
+{
+  "operations": [
+    {
+      "deliveryOptionMove": {
+        "deliveryOptionHandle": "standard",
+        "index": 0
+      }
+    }
+  ]
+}

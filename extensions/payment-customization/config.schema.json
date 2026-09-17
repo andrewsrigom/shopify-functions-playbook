@@ -16,6 +16,11 @@
       "type": "string",
       "minLength": 1,
       "maxLength": 100
+    },
+    "allowHidingAllMethods": {
+      "type": "boolean",
+      "default": false,
+      "description": "Explicitly allow hiding every payment method in this Function input. Other apps may hide additional methods."
     }
   },
   "required": ["enabled", "maximum", "currency", "methodName"],

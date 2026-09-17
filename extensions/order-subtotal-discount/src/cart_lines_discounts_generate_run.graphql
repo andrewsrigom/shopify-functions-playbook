@@ -1,0 +1,25 @@
+query CartLinesDiscountsGenerateRunInput {
+  cart {
+    lines {
+      id
+      cost {
+        subtotalAmount {
+          amount
+          currencyCode
+        }
+      }
+      merchandise {
+        __typename
+        ... on ProductVariant {
+          id
+        }
+      }
+    }
+  }
+  discount {
+    config: metafield(namespace: "$app", key: "config") {
+      jsonValue
+    }
+    discountClasses
+  }
+}

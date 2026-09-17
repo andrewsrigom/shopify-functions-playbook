@@ -12,6 +12,8 @@ export function cartPaymentMethodsTransformRun(
     typeof c.currency !== "string" ||
     typeof c.methodName !== "string" ||
     !c.methodName ||
+    (c.allowHidingAllMethods !== undefined &&
+      typeof c.allowHidingAllMethods !== "boolean") ||
     input.cart.lines.length === 0
   )
     return { operations: [] };
@@ -27,9 +29,20 @@ export function cartPaymentMethodsTransformRun(
   )
     return { operations: [] };
 
+  const hidden = input.paymentMethods.filter(
+    (method) => method.name === c.methodName,
+  );
+
+  if (
+    hidden.length === input.paymentMethods.length &&
+    c.allowHidingAllMethods !== true
+  ) {
+    return { operations: [] };
+  }
+
   return {
-    operations: input.paymentMethods
-      .filter((method) => method.name === c.methodName)
-      .map((method) => ({ paymentMethodHide: { paymentMethodId: method.id } })),
+    operations: hidden.map((method) => ({
+      paymentMethodHide: { paymentMethodId: method.id },
+    })),
   };
 }

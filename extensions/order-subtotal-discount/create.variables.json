@@ -1,0 +1,15 @@
+{
+  "discount": {
+    "title": "order-subtotal-discount",
+    "functionHandle": "order-subtotal-discount",
+    "startsAt": "2099-01-01T00:00:00Z",
+    "discountClasses": ["ORDER"],
+    "combinesWith": {
+      "orderDiscounts": false,
+      "productDiscounts": false,
+      "shippingDiscounts": false
+    },
+    "appliesOnSubscription": false,
+    "endsAt": "2099-01-01T01:00:00Z"
+  }
+}

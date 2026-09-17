@@ -1,0 +1,11 @@
+{
+  "metafields": [
+    {
+      "ownerId": "gid://shopify/DeliveryCustomization/REPLACE_OWNER_ID",
+      "namespace": "$app",
+      "key": "config",
+      "type": "json",
+      "value": "{\"enabled\":false,\"hideTitle\":\"Express\",\"restrictedVariantIds\":[\"gid://shopify/ProductVariant/2\"],\"blockedCountries\":[\"BR\"],\"preferredTitle\":\"Standard\"}"
+    }
+  ]
+}

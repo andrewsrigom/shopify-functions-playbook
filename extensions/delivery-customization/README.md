@@ -41,8 +41,8 @@ Owner: **DeliveryCustomization**, queried as `deliveryCustomization.config`. Met
 
 1. Follow [app setup](../../docs/activation.md) and deploy definitions only when explicitly authorized.
 2. Create the owner with `operations/create-delivery.graphql` and this scenario's `create.variables.json`. The example creates a disabled owner so configuration can be reviewed before activation.
-3. Copy the returned owner ID into `configure.variables.json`. Use the returned owner ID, not the Function ID.
-4. Execute `operations/configure.graphql` with those variables to write the `$app` / `config` JSON metafield. The input query reads these values at runtime.
+3. Copy `configure.variables.json` to an ignored `configure.local.json` and insert the returned owner ID. Use the owner ID, not the Function ID. The configuration starts with `enabled:false`.
+4. Execute `operations/configure.graphql` with the local variables to write the inactive `$app` / `config` JSON metafield. After reviewing the configuration, deliberately change its JSON `enabled` to true and write it again for the test session. The input query reads these values at runtime.
 5. Execute `operations/enable-delivery.graphql` with `activation.variables.json`. Replace its sample owner ID and set `enabled` to true to activate or false to deactivate.
 
 Required owner scope: `write_delivery_customizations`; read access accompanies write access. Use app-context credentials so `$app` resolves to the same app that owns the Function. Never execute these mutations from default CI.
@@ -62,3 +62,5 @@ Money thresholds are decimal strings in the specified presentment currency. Comp
 - [Versioned Function API](https://shopify.dev/docs/api/functions/2026-04/delivery-customization)
 - [Function availability](https://shopify.dev/docs/apps/build/functions)
 - [Configuration and owner lifecycle](../../docs/activation.md)
+
+See [security and cost controls](../../docs/security-and-cost.md) before selecting a store, enabling rules, or testing checkout.

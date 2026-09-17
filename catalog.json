@@ -78,7 +78,7 @@
     "owner": "paymentCustomization",
     "function": "cartPaymentMethodsTransformRun",
     "file": "cart_payment_methods_transform_run",
-    "fixtures": 11
+    "fixtures": 16
   },
   {
     "name": "delivery-customization",
@@ -97,5 +97,32 @@
     "function": "cartTransformRun",
     "file": "cart_transform_run",
     "fixtures": 12
+  },
+  {
+    "name": "conditional-delivery",
+    "api": "delivery_customization",
+    "target": "cart.delivery-options.transform.run",
+    "owner": "deliveryCustomization",
+    "function": "cartDeliveryOptionsTransformRun",
+    "file": "cart_delivery_options_transform_run",
+    "fixtures": 14
+  },
+  {
+    "name": "order-subtotal-discount",
+    "api": "discount",
+    "target": "cart.lines.discounts.generate.run",
+    "owner": "discount",
+    "function": "cartLinesDiscountsGenerateRun",
+    "file": "cart_lines_discounts_generate_run",
+    "fixtures": 16
+  },
+  {
+    "name": "mix-and-match-bundle",
+    "api": "cart_transform",
+    "target": "cart.transform.run",
+    "owner": "cartTransform",
+    "function": "cartTransformRun",
+    "file": "cart_transform_run",
+    "fixtures": 15
   }
 ]

@@ -1,0 +1,7 @@
+{
+  "enabled": false,
+  "hideTitle": "Express",
+  "restrictedVariantIds": ["gid://shopify/ProductVariant/2"],
+  "blockedCountries": ["BR"],
+  "preferredTitle": "Standard"
+}
